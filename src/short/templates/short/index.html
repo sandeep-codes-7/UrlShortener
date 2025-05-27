@@ -11,10 +11,13 @@
       <p class="text-m text-gray-500">Make your links shorter</p>
     </div>
     <div class="text-center mt-[5rem] items-center flex-auto">
-      <form action="" method="post">
-        <input type="text" class="bg-white text-center rounded-md p-2" placeholder="Enter your link here">
-        <input type="button" value="generate" class="bg-white text-center rounded-md p-2">
+      <form action="index/" method="POST">
+        <input type="text" class="bg-white text-center rounded-md p-2" name="url" placeholder="Enter your link here" required>
+        <button type="submit" class="bg-white text-center rounded-md p-2 hover:bg-gradient-to-l via--500 from-white to-blue-900">generate</button>
       </form>
+    </div>
+    <div class="mt-10 items-center flex-auto">
+      <h1 class="text-white text-xl text-center font-bold">shortened link: <span id="short_link">{{main_url}}</span></h1>
     </div>
   </body>
 </html>
