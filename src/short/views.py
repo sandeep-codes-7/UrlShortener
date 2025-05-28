@@ -13,7 +13,7 @@ def randomval():
     p = salphs+list(map(str,nums))
     random.shuffle(p)
     random_pattern = random.choice(salphs)+random.choice(p)+random.choice(p)+random.choice(p)+random.choice(p)
-    print(random_pattern)
+    #print(random_pattern)
     return random_pattern
 
 def result(request):
@@ -30,5 +30,13 @@ def result(request):
 
 
 
-
-
+def redirect_url(request,redir):
+    #print(UrlData.objects.get(short_url=redir).original_url)
+    #res=UrlData.objects.get(short_url=redir).original_url
+    try:
+        if redir!=None:
+            return redirect(UrlData.objects.get(short_url=redir).original_url)
+        else:
+            pass
+    except Exception as e:
+        pass
