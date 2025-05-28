@@ -10,3 +10,12 @@
 - Tracks and stores URLs in a MySQL database
 
 - Simple and responsive UI using Tailwind CSS
+
+## 🛠️ Tech Stack
+- Backend: Django (Python)
+
+- Database: MySQL using mysqlclient
+
+- Frontend: Tailwind CSS
+
+- ORM: Django ORM
