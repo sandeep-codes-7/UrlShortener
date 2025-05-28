@@ -11,13 +11,14 @@
       <p class="text-m text-gray-500">Make your links shorter</p>
     </div>
     <div class="text-center mt-[5rem] items-center flex-auto">
-      <form action="index/" method="POST">
-        <input type="text" class="bg-white text-center rounded-md p-2" name="url" placeholder="Enter your link here" required>
-        <button type="submit" class="bg-white text-center rounded-md p-2 hover:bg-gradient-to-l via--500 from-white to-blue-900">generate</button>
+      <form action="result/" method="POST">
+        {% csrf_token %}
+        <input type="url" class="bg-white text-center rounded-md p-2" name="main_url" placeholder="Enter your link here" required>
+        <button type="submit" class="bg-white text-center rounded-md p-2 hover:bg-gray-500">generate</button>
       </form>
     </div>
     <div class="mt-10 items-center flex-auto">
-      <h1 class="text-white text-xl text-center font-bold">shortened link: <span id="short_link">{{main_url}}</span></h1>
+      <p class="text-m text-gray-500 text-center">github: <a href="https://github.com/sandeep-codes-7" target="_blank" rel="noopener noreferrer">sandeep-codes-7</a></p>
     </div>
   </body>
 </html>
