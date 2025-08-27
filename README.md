@@ -19,3 +19,6 @@
 - Frontend: Tailwind CSS
 
 - ORM: Django ORM
+
+# Screenshots
+![home page](./screenshots/homepage.png)
