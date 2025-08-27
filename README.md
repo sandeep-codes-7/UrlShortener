@@ -22,3 +22,6 @@
 
 # Screenshots
 ![home page](./screenshots/homepage.png)
+![short code](./screenshots/short_code.png)
+![short code](./screenshots/already.png)
+
